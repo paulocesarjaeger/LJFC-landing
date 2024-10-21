@@ -1,0 +1,123 @@
+:root{
+    --dorado-brillante: #FFD700;
+    --dorado-oscuro: #B8860B;
+    --negro-clasico: #000000;
+    --gris-oscuro: #2F4F4F;
+    --blanco-crema: #F5F5DC;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.cabecera{
+    background: url(/img/portada.jpg)  no-repeat center/cover;
+    min-width: 100%;
+    max-height: 100vh;
+    position: relative;
+    z-index: 100;
+
+    .cabecera_header{
+        color: var(--blanco-crema);
+        font-weight: bolder;
+        position: absolute;
+        min-width: 100%;
+        min-height: 5vh;
+        display: flex;
+        padding: 3% 5%;
+        
+        .cabecera_header_logo{
+            min-width: 100%;
+        }
+
+        .cabecera_header_menu{
+            min-width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                text-decoration: none;
+                color: var(--blanco-crema);
+                margin: 0 1%;
+                position: relative;
+                
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            a::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: var(--blanco-crema);
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all .3s ease-in-out;
+            }
+
+            a:hover::after{
+                visibility: visible;
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    .cabecera_cuerpo{
+        color: var(--blanco-crema);
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-size: 5rem;
+            text-align: center;
+            font-weight: 700;
+            background-color: red;
+        }
+
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 3% 8% 3% 8%;
+        }
+
+        button{
+            padding: 1% 2%;
+            border: none;
+            cursor: pointer;
+            background-color: var(--gris-oscuro);
+            color: var(--blanco-crema);
+            font-weight: bolder;
+            font-size: 1rem;
+            transition: all .4s ease-in-out;
+        }
+
+        button:hover{
+            transform: scale(1.1);
+            background-color: var(--dorado-oscuro);
+            color: var(--gris-oscuro);
+        }
+    }
+}
+
+.cabecera::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: var(--negro-clasico);
+    opacity: .6;
+    z-index: -90;
+}
