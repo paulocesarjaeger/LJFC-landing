@@ -16,7 +16,7 @@
 .cabecera{
     background: url(/img/portada.jpg)  no-repeat center/cover;
     min-width: 100%;
-    max-height: 100vh;
+    max-height: 40vh;
     position: relative;
     z-index: 100;
 
@@ -82,30 +82,8 @@
             font-size: 5rem;
             text-align: center;
             font-weight: 700;
-            background-color: red;
-        }
-
-        p{
-            text-align: center;
-            font-size: 1.5rem;
-            margin: 3% 8% 3% 8%;
-        }
-
-        button{
-            padding: 1% 2%;
-            border: none;
-            cursor: pointer;
-            background-color: var(--gris-oscuro);
-            color: var(--blanco-crema);
-            font-weight: bolder;
-            font-size: 1rem;
-            transition: all .4s ease-in-out;
-        }
-
-        button:hover{
-            transform: scale(1.1);
-            background-color: var(--dorado-oscuro);
-            color: var(--gris-oscuro);
+            height: 100vh;
+            margin-top: 11%;
         }
     }
 }
@@ -116,7 +94,7 @@
     top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 40vh;
     background-color: var(--negro-clasico);
     opacity: .6;
     z-index: -90;
