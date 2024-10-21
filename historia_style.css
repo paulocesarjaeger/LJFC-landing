@@ -99,3 +99,231 @@
     opacity: .6;
     z-index: -90;
 }
+
+/* INTRODUCCION */
+
+.introduccion{
+    background-color: var(--blanco-crema);
+    color: var(--gris-oscuro);
+    min-width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%;
+
+    h2{
+        flex: 1;
+        font-size: 3rem;
+        font-style: italic;
+        text-align: justify;
+    }
+
+    p{
+        flex: 1;
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+}
+
+/* PRESENTACION */
+
+.presentacion{
+    width: 100%;
+    min-height: 150vh;
+    background-color: var(--dorado-oscuro);
+    padding: 3% 5%;
+
+    .presentacion_contenedor{
+        background-color: var(--blanco-crema);
+        min-width: 100%;
+        min-height: 150vh;
+        padding: 5% 20%;
+
+        h2{
+            text-align: center;
+            font-size: 3rem;
+            color: var(--gris-oscuro);
+            margin: 5%;
+        }
+
+        .presentacion_contenedor_texto{
+            img{
+                float: left;
+                margin: 2%;
+            }
+
+            p{
+                font-size: 1.5rem;
+                text-align: justify;
+                color: var(--gris-oscuro);
+            }
+        }
+
+        .redes{
+
+            text-align: center;
+            margin-top: 5%;
+            
+            a img{
+                max-width: 35px;
+            }
+        }
+    }
+    
+}
+
+/* PUEDO AYUDARTE */
+.puedo_ayudarte{
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 0 20%;
+
+    h2{
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        padding: 7% 0;
+        color: var(--gris-oscuro);
+    }
+
+    .puedo_ayudarte_contenedor_imagen{
+        position: relative;
+
+        .contenedor_img{
+            z-index: 100;
+            max-width: 700px;
+            max-height: 700px;
+    
+            img{
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+
+        .servicios{
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            background-color: var(--gris-oscuro);
+            color: var(--blanco-crema);
+            padding: 0 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            min-width: 500px;
+            min-height: 300px;
+            
+
+            h3{
+                font-size: 2rem;
+                margin-bottom: 5%;
+            }
+
+            ul a{
+                text-decoration: none;
+                color: var(--blanco-crema);
+                font-size: 1.5rem;
+                line-height: 35px;
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: var(--gris-oscuro);
+        margin: 5%;
+    }
+
+    .contenedor_btn{
+        min-width: 100%;
+        text-align: center;
+
+        button{
+            padding: 1% 2%;
+            margin-bottom: 5%;
+            border: none;
+            cursor: pointer;
+            background-color: var(--gris-oscuro);
+            color: var(--blanco-crema);
+            font-weight: bolder;
+            font-size: 1rem;
+            transition: all .4s ease-in-out;
+        }
+    
+        button:hover{
+            transform: scale(1.1);
+            background-color: var(--dorado-oscuro);
+            color: var(--gris-oscuro);
+        }
+    }
+    
+}
+
+footer{
+    background-color: var(--dorado-oscuro);
+    width: 100%;
+    height: 50vh;
+    max-height: 50vh;
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo logo serv_1 serv_2 redes"
+        "logo logo logo logo serv_1 serv_2 redes"
+        "logo logo logo logo serv_3 serv_4 redes"
+        "logo logo logo logo serv_3 serv_4 redes";
+    place-items: center;
+
+    .logo{grid-area: logo;}
+    .serv_1{grid-area: serv_1;}
+    .serv_2{grid-area: serv_2;}
+    .serv_3{grid-area: serv_3;}
+    .serv_4{grid-area: serv_4;}
+    .redes{grid-area:  redes;}
+
+    .redes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--gris-oscuro);
+        font-size: 1.5rem;
+    }
+
+    [class^="serv"]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        color: var(--blanco-crema);
+    }
+
+    a img{
+        max-width: 50px;
+        margin: 0 5%;
+}
+
+.serv_1,
+.serv_2{
+    padding-top: 15vh ;
+}
+
+.serv_3,
+.serv_4{
+    padding-bottom: 15vh ;
+}
+
+}
+
