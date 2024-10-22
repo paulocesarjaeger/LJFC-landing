@@ -13,6 +13,11 @@
     font-family: sans-serif;
 }
 
+a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
 .cabecera{
     background: url(/img/portada.jpg)  no-repeat center/cover;
     min-width: 100%;
