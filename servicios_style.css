@@ -120,7 +120,7 @@ a:visited{
         align-items: center;
         justify-content: center;
         padding: 0 5%;
-        color: var(--negro-clasico);
+        color: var(--blanco-crema);
 
         h2{
             flex: 1;
@@ -136,12 +136,61 @@ a:visited{
         }
     }
 
-    .el_servicio{
+    .el_servicio,
+    .ventajas{
         background-color: var(--blanco-crema);
         min-width: 100%;
         min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        color: var(--gris-oscuro);
+        justify-content: space-around;
+        padding: 0 5%;
+
+        h2{
+            min-width: 100%;
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 5%;
+        }
+
+        .contenedor_texto{
+            min-width: 100%;
+            min-height: 60vh;
+            display: flex;
+            gap: 5%;
+            text-align: justify;
+            font-size: 1.3rem;
+            
+
+            div{
+            
+                h3{
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 10vh;
+                    text-align: center;
+                }
+    
+                p{
+                    flex: 1;
+                    min-width: 100%;
+                    min-height: 50vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            
+
+        }
         
     }
 
 }
+
+/* VENTAJAS */
 
