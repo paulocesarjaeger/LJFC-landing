@@ -422,7 +422,7 @@
         }
 
         .imagen_1 img{
-            min-height: 47vh;
+            min-height: 40vh;
             object-fit: cover;
 
         }
@@ -498,3 +498,14 @@ footer{
 
 }
 
+
+.header_logo{
+    min-width: auto;
+    max-height: 20vh;
+    position: absolute;
+}
+
+.logo_footer{
+    position: absolute;
+    left: 0;
+}
