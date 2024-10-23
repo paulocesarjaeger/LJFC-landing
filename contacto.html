@@ -37,10 +37,56 @@
                 <img src="/img/email.png" alt="Ícono de Instagram">
             </div>
         </div>
-        <div class="right">
-            
+            <div class="right">
+                <form>
+                    <label for="first-name">Nombre *</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Nombre">
+                    <input type="text" id="last-name" name="last-name" placeholder="Apellido">
+                    
+                    <label for="email">Correo Electrónico *</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="dob">Fecha de Nacimiento</label>
+                    <input type="text" id="dob-mm" name="dob-mm" placeholder="MM" style="width: 30%;">
+                    <input type="text" id="dob-dd" name="dob-dd" placeholder="DD" style="width: 30%;">
+                    <input type="text" id="dob-yyyy" name="dob-yyyy" placeholder="YYYY" style="width: 30%;">
+                    
+                    <label for="job">Tu Ocupación</label>
+                    <input type="text" id="job" name="job">
+                    
+                    <label for="location">¿Dónde vives?</label>
+                    <input type="text" id="location" name="location">
+                    <label>¿Prefieres reunirte?</label>
+                    <div class="checkbox">
+                        <input type="checkbox" id="online" name="meeting-preference" value="online">
+                    <label for="online" style="display: inline;">Online</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="in-person" name="meeting-preference" value="in-person">
+                        <label for="in-person" style="display: inline;">En Persona</label>
+                    </div>
+                    <label for="goal">¿Cuál es tu objetivo?</label>
+                    <textarea id="goal" name="goal" rows="4" placeholder="Describa su objetivo..."></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                </div>
+
+    </div>
+
+        
+        
+    <!-- FOOTER -->
+    <footer>
+        <img src="" alt="Logo" class="logo">
+        <a href="servicios.html#personal_styling" class="serv_1">Personal Styling</a>
+        <a href="servicios.html#personal_shopper" class="serv_2">Personal shopping</a>
+        <a href="servicios.html#wardrobe_edit" class="serv_3">Wardrobe Edit</a>
+        <a href="servicios.html#corporative_consulting" class="serv_4">Corporative Consulting</a>
+        <div class="redes">
+            <a href="#"><img src="/img/mail_blanco.png" alt="mail"></a>
+            <a href="#"><img src="/img/instagram_balnco.png" alt="instagram"></a>
         </div>
-        <!-- FORM -->
-        <!-- FOOTER -->
+    </footer>
+
 </body>
 </html>
